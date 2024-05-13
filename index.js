@@ -60,13 +60,13 @@ const obj = {
     tom: 'there'
 };
 
-let arrValues = [];
+let arrValues2 = [];
 for (let key in obj) {
     if (Array.isArray(obj[key])) {
-        arrValues2 = arrValues.concat(obj[key]);
+        arrValues2 = arrValues2.concat(obj[key]);
     }
     else {
-        arrValues.push(obj[key]);
+        arrValues2.push(obj[key]);
     }
 }
 console.log(arrValues2);
