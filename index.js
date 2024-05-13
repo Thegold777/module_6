@@ -24,10 +24,10 @@ check("Сантимент");
 
 
 
-const arr = [1, 2, 3, 1, 5, 4, 2, 3, 5, 'they', 'don\'t', 'know', 'that', 'we', 'know', 'that', 'they', 'know' ];
+const arr = [1, 2, 3, 1, 5, 4, 2, 3, 5, 'they', 'don\'t', 'know', 'that', 'we', 'know', 'that', 'they', 'know'];
 const arrUniq = new Set()
 arr.forEach(element => {
- arrUniq.add(element)   
+    arrUniq.add(element)
 });
 console.log(Array.from(arrUniq));
 
@@ -35,20 +35,20 @@ console.log(Array.from(arrUniq));
 
 const promptText = prompt('Введите число');
 const arr2 = [];
-for(let i = 0; i <= Number(promptText); i++){
+for (let i = 0; i <= Number(promptText); i++) {
     arr2.push(i)
 }
 console.log(arr2);
 
 
-const arr3 = ["x","0","x","0","x","0","x","0","x"];
+const arr3 = ["x", "0", "x", "0", "x", "0", "x", "0", "x"];
 let xo = "";
-const ex=[2,5,8];
-arr3.forEach((value,index)=>{
-    xo+=value+" ";
-    if(ex.includes(index)){
+const ex = [2, 5, 8];
+arr3.forEach((value, index) => {
+    xo += value + " ";
+    if (ex.includes(index)) {
         console.log(xo);
-        xo ="";
+        xo = "";
     }
 })
 
@@ -60,11 +60,16 @@ const obj = {
     tom: 'there'
 };
 
-const arrValues = []
-
-for()
-
-
+let arrValues = [];
+for (let key in obj) {
+    if (Array.isArray(obj[key])) {
+        arrValues2 = arrValues.concat(obj[key]);
+    }
+    else {
+        arrValues.push(obj[key]);
+    }
+}
+console.log(arrValues2);
 
 
 
