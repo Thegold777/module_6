@@ -7,9 +7,9 @@ const person = {
     age: 1000
 }
 
-let func = printInfo;
+let function = printInfo;
 
-func.call(printInfo, person.name, person.age)
+function.call(printInfo, person.name, person.age)
 
 
 
