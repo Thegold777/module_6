@@ -1,26 +1,35 @@
-function printInfo(name, age){
-    console.log(`Name: ${name}, Age: ${age} `)
-}
+// function printInfo(name, age){
+//     console.log(`Name: ${name}, Age: ${age} `)
+// }
 
-const person = {
-    name: "Vasya",
-    age: 1000
-}
+// const person = {
+//     name: "Vasya",
+//     age: 1000
+// }
 
-let function = printInfo;
+// let function = printInfo;
 
-function.call(printInfo, person.name, person.age)
-
-
+// function.call(printInfo, person.name, person.age)
 
 
-function calculate(a, b, operator) {
-    return operator(a, b);
-}
 
-const values = [2, 3, "+"];
-const result = calculate.apply(values);
-console.log(result);
+
+// function calculate(a, b, operator) {
+//     return operator(a, b);
+// }
+
+// const values = [2, 3, "+"];
+// const result = calculate.apply(values);
+// console.log(result);
+
+
+const users [ 
+{age: 18 },
+{age: 20 },
+{age: 30}
+];
+
+const newUsers = 
 
 
 
